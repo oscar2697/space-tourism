@@ -19,7 +19,7 @@ const Navbar = () => {
                     CREW
                 </Link>
 
-                <Link to={'/'}  className="flex items-center">
+                <Link to={'/technology'}  className="flex items-center">
                     <span className="text-xs mr-2">03</span>
                     TECHNOLOGY
                 </Link>

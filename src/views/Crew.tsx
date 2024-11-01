@@ -9,6 +9,7 @@ const Crew = () => {
     const currentCrew = data.crew.find(
         dest => dest.name.toUpperCase() === crew
     );
+
     return (
         <div>
             <div

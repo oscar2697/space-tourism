@@ -3,6 +3,7 @@ import AppLayout from './layout/AppLayout'
 import Home from './views/Home'
 import Destination from './views/Destination'
 import Crew from './views/Crew'
+import Technology from './views/Technology'
 
 export const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
             {
                 path: 'crew',
                 element: <Crew />
+            },
+            {
+                path: 'technology',
+                element: <Technology />
             }
         ]
     }
