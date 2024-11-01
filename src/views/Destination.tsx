@@ -5,7 +5,7 @@ import data from '../../public/data.json';
 
 const Destination = () => {
     const [currentDestination, setCurrentDestination] = useState('MOON');
-    
+
     const destination = data.destinations.find(
         dest => dest.name.toUpperCase() === currentDestination
     );
