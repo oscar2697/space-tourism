@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import DestinationNav from '../components/DestinationNav';
 import data from '../../public/data.json';
+import backgroundImageDestination from '../../public//assets/destination/background-destination-desktop.jpg'
 
 const Destination = () => {
     const [currentDestination, setCurrentDestination] = useState('MOON');
@@ -12,7 +13,7 @@ const Destination = () => {
     return (
         <div 
             className="min-h-screen bg-cover bg-center bg-no-repeat text-white pt-32 pb-8 px-8"
-            style={{ backgroundImage: `url(../../public/assets/destination/background-destination-desktop.jpg)` }}
+            style={{ backgroundImage: `url(${backgroundImageDestination})` }}
         >
             <h1 className="text-2xl tracking-widest mb-20 pl-40">
                 <span className="text-gray-600 font-bold mr-4">01</span>
