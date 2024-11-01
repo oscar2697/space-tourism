@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom'
 import backgroundImage from '../assets/home/background-home-desktop.jpg'
 
 const Home = () => {
+    const navigate = useNavigate()
+
     return (
         <div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${backgroundImage})` }}>
@@ -20,7 +23,10 @@ const Home = () => {
                 </div>
 
                 <div className="absolute bottom-24 right-24">
-                    <button className="w-48 h-48 rounded-full bg-white text-xl tracking-wider hover:shadow-[0_0_0_88px_rgba(255,255,255,0.1)] transition-shadow duration-300">
+                    <button 
+                        onClick={() => navigate('/destination')}
+                        className="w-48 h-48 rounded-full bg-white text-xl tracking-wider hover:shadow-[0_0_0_88px_rgba(255,255,255,0.1)] transition-shadow duration-300"
+                    >
                         EXPLORE
                     </button>
                 </div>

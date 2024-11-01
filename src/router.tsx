@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 import AppLayout from './layout/AppLayout'
 import Home from './views/Home'
+import Destination from './views/Destination'
 
 export const router = createBrowserRouter([
     {
@@ -11,6 +12,10 @@ export const router = createBrowserRouter([
                 index: true,
                 element: <Home />
             },
+            {
+                path: 'destination',
+                element: <Destination />
+            }
         ]
     }
 ])
