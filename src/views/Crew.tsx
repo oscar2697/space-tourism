@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import backgroundImageCrew from '../../public/assets/crew/background-crew-desktop.jpg'
-import data from '../../public/data.json';
-import CrewNav from '../components/CrewNav';
+import data from '../../public/data.json'
+import CrewNav from '../components/CrewNav'
 
 const Crew = () => {
     const [crew, setCrew] = useState('DOUGLAS HURLEY')

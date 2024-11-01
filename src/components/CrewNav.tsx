@@ -1,13 +1,13 @@
-import data from '../../public/data.json';
+import data from '../../public/data.json'
 
 interface CrewNavProps {
-    crew: string;
-    onCrewChange: (crew: string) => void;
-    className?: string;
+    crew: string
+    onCrewChange: (crew: string) => void
+    className?: string
 }
 
 const CrewNav = ({ crew, onCrewChange, className }: CrewNavProps) => {
-    const people = data.crew.map(person => person.name.toUpperCase());
+    const people = data.crew.map(person => person.name.toUpperCase())
 
     return (
         <div className={className}>
@@ -29,7 +29,7 @@ const CrewNav = ({ crew, onCrewChange, className }: CrewNavProps) => {
                 </ul>
             </nav>
         </div>
-    );
-};
+    )
+}
 
-export default CrewNav; 
+export default CrewNav 

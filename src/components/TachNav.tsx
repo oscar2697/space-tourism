@@ -1,4 +1,4 @@
-import data from '../../public/data.json';
+import data from '../../public/data.json'
 
 interface CrewNavProps {
     technology: string
@@ -34,4 +34,4 @@ const TechNav = ({ technology, onTechChange, className }: CrewNavProps) => {
     )
 }
 
-export default TechNav;
+export default TechNav

@@ -1,12 +1,12 @@
-import data from '../../public/data.json';
+import data from '../../public/data.json'
 
 type DestinationNavProps = {
-    currentDestination: string;
-    onDestinationChange: (destination: string) => void;
+    currentDestination: string
+    onDestinationChange: (destination: string) => void
 }
 
 const DestinationNav = ({ currentDestination, onDestinationChange }: DestinationNavProps) => {
-    const destinations = data.destinations.map(dest => dest.name.toUpperCase());
+    const destinations = data.destinations.map(dest => dest.name.toUpperCase())
     
     return (
         <nav>
@@ -27,7 +27,7 @@ const DestinationNav = ({ currentDestination, onDestinationChange }: Destination
                 ))}
             </ul>
         </nav>
-    );
-};
+    )
+}
 
-export default DestinationNav; 
+export default DestinationNav 

@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import DestinationNav from '../components/DestinationNav';
-import data from '../../public/data.json';
+import { useState } from 'react'
+import DestinationNav from '../components/DestinationNav'
+import data from '../../public/data.json'
 import backgroundImageDestination from '../../public//assets/destination/background-destination-desktop.jpg'
 
 const Destination = () => {
-    const [currentDestination, setCurrentDestination] = useState('MOON');
+    const [currentDestination, setCurrentDestination] = useState('MOON')
 
     const destination = data.destinations.find(
         dest => dest.name.toUpperCase() === currentDestination
@@ -60,4 +60,4 @@ const Destination = () => {
     );
 };
 
-export default Destination;
+export default Destination

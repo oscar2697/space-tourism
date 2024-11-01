@@ -1,9 +1,7 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import backgroundImageCrew from '../../public/assets/technology/background-technology-desktop.jpg'
-import data from '../../public/data.json';
-import TechNav from '../components/TachNav';
-
-
+import data from '../../public/data.json'
+import TechNav from '../components/TachNav'
 
 const Technology = () => {
     const [technology, setTechnology] = useState('LAUNCH VEHICLE')
@@ -19,7 +17,7 @@ const Technology = () => {
                 style={{ backgroundImage: `url(${backgroundImageCrew})` }}
             >
                 <h1 className="text-2xl tracking-widest mb-20 pl-40">
-                    <span className="text-gray-600 font-bold mr-4">02</span>
+                    <span className="text-gray-600 font-bold mr-4">03</span>
                     SPACE LAUNCH 101
                 </h1>
 
