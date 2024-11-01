@@ -14,12 +14,12 @@ const Navbar = () => {
                     DESTINATION
                 </Link>
 
-                <Link to={'/destination'}  className="flex items-center">
+                <Link to={'/crew'}  className="flex items-center">
                     <span className="text-xs mr-2">02</span>
                     CREW
                 </Link>
 
-                <Link to={'/destination'}  className="flex items-center">
+                <Link to={'/'}  className="flex items-center">
                     <span className="text-xs mr-2">03</span>
                     TECHNOLOGY
                 </Link>
