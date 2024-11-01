@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .transition-[background-image] {
+        transition-property: background-image;
+    }
+}
+
+/* Agregar el efecto fade */
+.bg-transition {
+    transition:
+        opacity 0.3s ease-in-out,
+        background-image 0.3s ease-in-out;
+}
+
+/* Preload de imágenes */
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url("../public/assets/home/background-home-mobile.jpg")
+        url("../public/assets/home/background-home-tablet.jpg") url("../public/assets/home/background-home-desktop.jpg");
+}
