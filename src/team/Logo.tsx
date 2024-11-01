@@ -1,4 +1,4 @@
-import logoImage from '../assets/shared/logo.svg'
+import logoImage from '../../public/assets/shared/logo.svg'
 
 const Logo = () => {
     return (

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import backgroundImage from '../assets/home/background-home-desktop.jpg'
+import backgroundImage from '../../public/assets/home/background-home-desktop.jpg'
 
 const Home = () => {
     const navigate = useNavigate()
